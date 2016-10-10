@@ -16,21 +16,6 @@ This Code was developed in the course of my Research Project on Cracking CAPTCHA
 -Autoencoder_results/opt_parameter_vector.npy
 -Autoencoder_results/zca_white.npy
 
-
-############## To run the CAPTCHA GUI: 
-python gui_catpcha.py
-
-The following libraries are imported: 
-from Tkinter import *
-from PIL import Image as img
-from PIL import ImageTk as imgtk
-import convnet_captchas
-import numpy as np
-import scipy.io
-from matplotlib import pyplot as plt
-import time
-
-
 ########### To run the Convolutional Neural Network
 
 python convnet_captchas.py
@@ -46,6 +31,7 @@ import random as rnd
 import time
 
 ########## To run the Sparse Autoencoder for Pre-training 
+*Note that the Sparse Autoencoder runs very slowly
 
 python extract_features.py
 
@@ -54,5 +40,3 @@ import numpy as np
 import scipy.io
 import scipy.optimize
 import matplotlib.pyplot as plt
-
-*Note that the Sparse Autoencoder runs very slowly
